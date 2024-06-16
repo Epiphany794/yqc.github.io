@@ -1,0 +1,76 @@
+/*导航区*/
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding:0 ;
+}
+nav ul li{
+    flex: 1;
+    height: 60px;
+}
+.local_home a{
+    color: black;
+    display: flex;
+    height: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+}
+.local_home a:hover{
+    background-color: bisque;
+    border-bottom: 3px solid orange;
+    color:orange;
+}
+.local_hd{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.local_bd{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+body{
+    background-image: url(../images/habitbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+.img-container {  
+    display: flex;  
+    justify-content: space-between;  
+    margin-top: 20px; /* 与导航区保持一些间距 */  
+    height: 100vh;  
+}  
+.title{
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+  
+.img-wrapper {  
+    flex: 1; /* 让两个wrapper平分空间 */  
+    position: relative;  
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center; 
+}  
+  
+.img-wrapper img{  
+    max-width: 100%;  
+    height: auto; 
+    border-radius: 25px;
+}  
+  

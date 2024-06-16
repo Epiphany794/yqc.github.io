@@ -1,0 +1,230 @@
+body{
+    background-image: url(../images/vall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: sans-serif; 
+    margin: 0 auto;
+    padding: 0;
+}
+/* 添加背景圆点美观 */
+.sec1_circle1 {
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.3)
+    );
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+    top: 5%;
+    right: 15%;
+}
+.sec1_circle2 {
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(247, 255, 174, 0.3)
+    );
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 10%;
+    left: 5%;
+}
+.sec1_circle3 {
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(248, 202, 202, 0.8),
+        rgba(255, 255, 255, 0.3)
+    );
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -10%;
+    right: 35%;
+}
+
+/*导航区*/
+.sec1{
+    background: linear-gradient(to right top,orange red);
+    min-height: 100vh;
+    background-size: 100%;
+}
+.sec1 nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+.sec1 nav ul{
+    list-style-type: none;
+    display: flex;
+    width: 750px;
+    margin: 0 auto;
+    padding:0 auto;
+}
+.sec1 nav ul li{
+    flex: 1;
+    height: 60px;
+}
+.local_home a{
+    color: black;
+    display: flex;
+    height: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease-in-out;
+}
+.local_home a:hover{
+    background-color: bisque;
+    border-bottom: 3px solid orange;
+    color:orange
+}
+.local_hd{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.local_bd{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+/*main区域*/
+main{
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    height:600px;
+    border-radius: 25px;
+    background-image: linear-gradient(45deg,rgba(163,255,231,0.6),rgba(255,193,179,0.6));
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(0.2rem);
+}
+/* 左侧菜单选项 */
+.main_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+}
+.main_left div{
+    width: 100%;
+    flex: 1;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_left div:hover{
+    background-color: lightskyblue;
+    border-radius: 25px;
+}
+/* 头像 */
+.myPhoto{
+    flex: 3;
+    width: 100%;
+    padding: 15px auto;
+    text-align: center;
+}
+.myPhoto img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 10px auto;
+}
+.myPhoto p{
+    margin: 10px auto;
+}
+
+/* 右侧内容展示 */
+.main_right{
+    flex: 8;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0 25px 25px 0;
+    overflow: hidden;
+}
+.content-item{
+    width:100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 0 25px 25px 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.content-item.active{
+    display: flex;
+}
+#carousel-1 img{
+    width: 35%;
+    height: 55%;
+    border-radius: 100%;
+    margin: 10px;
+}
+.content-item img{
+    width: 640px;
+    height: 360px;
+    border-radius: 25px;
+    margin: 40px auto;
+}
+#carousel-1 p{
+    color:lightseagreen;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 25px;
+    margin: 0;
+    line-height:1.5 ;
+    font-style: italic;
+}
+.content-item p{
+    color:blue;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px auto 0;
+}
+/* 页脚区 */
+footer{
+    color: indianred;
+    padding: 30px;
+    text-align: right;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    margin: 0 auto;
+}
+.contact-info,.motto{
+    flex: 1;
+}
+.contact-info p{
+    margin: 0;
+}
+.motto p{
+    font-style: italic;
+}

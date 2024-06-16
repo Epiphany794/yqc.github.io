@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页面</title>
+    <link href="./css/login.css" rel="stylesheet">
+</head>
+<body>
+     <div class="login-container"> 
+        <!-- 登录容器的div，包裹整个登录表单 -->
+        <div class="login-form" id="login-form1">
+            <h1>登录</h1>
+            <!-- 标题 -->
+                <label for="username">账号:</label>
+                <!-- 用户名标签 -->
+                    <input type="text" id="username" name="username" required>
+                <label for="password">密码:</label>
+                <!-- 密码标签 -->
+                    <input type="password" id="password"  name="password" required>
+                    <button type="submit" id="login-form2" value="登录">登录</button> 
+                    <!-- 登录按钮，点击触发js事件   -->
+        </div>
+    </div>
+            <script>  
+            // 当ID为login-form2时，触发监听器
+            document.getElementById('login-form2').addEventListener('click',function(){
+                var loginForm=document.getElementById('login-form1');
+                    var username = document.getElementById('username').value;  
+                    var password = document.getElementById('password').value;  
+                //  判断用户名和密码是否匹配
+                    if (username=='yqc' && password=='123456') {  
+                        alert('登录成功!');
+                        // 跳转到主页  
+                       window.location.href = './html/index2.html';  
+                    } else {  
+                        alert('用户名或密码错误！');  
+                    }  
+                });  
+            </script> 
+</body>
+</html>
